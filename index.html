@@ -142,7 +142,7 @@
       z-index: 1;
       text-shadow: 0 2px 24px rgba(0,0,0,0.2);
     }
-    .hero h1 em { font-style: normal; color: #FFD740; }
+    .hero h1 em { font-style: normal; color: white; }
 
     .hero h2 {
       font-size: clamp(1.05rem, 2.5vw, 1.35rem);
@@ -335,9 +335,17 @@
       padding: 4px 0;
       display: flex;
       align-items: flex-start;
-      gap: 8px;
+      gap: 6px;
     }
-    .benefit-list li::before { content: '✓'; color: var(--green-bright); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .benefit-list li::before {
+      content: '✓';
+      color: var(--green-bright);
+      font-weight: 700;
+      flex-shrink: 0;
+      width: 16px;
+      line-height: 1.55;
+      text-align: center;
+    }
 
     /* ── Program ── */
     .program { background: white; }
@@ -491,13 +499,17 @@
     /* ── Form Section ── */
     .form-section { background: white; padding: 80px 24px; text-align: center; }
     .form-section .section-sub { margin: 0 auto 44px; }
-    .tally-wrapper {
-      max-width: 640px;
+    .tally-outer {
+      max-width: 680px;
       margin: 0 auto;
+      padding: 0 16px;
+    }
+    .tally-wrapper {
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 8px 40px rgba(0,0,0,0.1);
       border: 1px solid rgba(0,0,0,0.08);
+      padding: 8px 0;
     }
 
     /* ── Location ── */
@@ -841,12 +853,28 @@
       .countdown { gap: 9px; }
       .cd-unit { min-width: 62px; padding: 12px 10px; }
       .cd-num { font-size: 1.75rem; }
-      .program-timeline::before { left: 48px; }
-      .program-time { width: 96px; font-size: 0.76rem; }
       .location-card { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; gap: 28px; }
       .final-cta { padding: 80px 20px 100px; }
       .footer-bottom-row { flex-direction: column; align-items: flex-start; }
+
+      /* ── Mobile timeline: stacked cards ── */
+      .program-timeline::before { display: none; }
+      .program-item { flex-direction: column; gap: 0; margin-bottom: 20px; }
+      .program-dot { display: none; }
+      .program-time {
+        width: auto;
+        text-align: left;
+        font-size: 0.8rem;
+        color: white;
+        background: var(--ocean-600);
+        padding: 7px 16px;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 0;
+      }
+      .program-content {
+        border-radius: 0 10px 10px 10px;
+      }
     }
   </style>
 </head>
@@ -861,7 +889,7 @@
   <section class="hero">
     <!-- Brand Logo -->
     <img
-      src="https://raw.githubusercontent.com/claudiopasinetti/stage-varedo/main/public/images/lido-azzurro-logo.png"
+      src="images/lido-azzurro-logo.png"
       alt="Piscina Lido Azzurro"
       class="hero-logo"
       onerror="this.style.display='none'">
@@ -968,9 +996,9 @@
             <div class="program-content-title">📚 Sessione Teorica</div>
             <div class="program-content-desc">Strategie pratiche e scientificamente validate, spiegate da esperti del settore.</div>
             <ul class="program-items-list">
-              <li><span class="bullet">🥗</span> <strong>Nutrizione:</strong> prevenzione della perdita muscolare e dell'osteoporosi</li>
-              <li><span class="bullet">💊</span> <strong>Integrazione:</strong> vitamine, salute intestinale e prevenzione del declino cognitivo</li>
-              <li><span class="bullet">🫁</span> <strong>Respirazione:</strong> gestione della pressione, focus, attenzione e qualità del sonno</li>
+              <li><span class="bullet">🥗</span><span><strong>Nutrizione:</strong> prevenzione della perdita muscolare e dell'osteoporosi</span></li>
+              <li><span class="bullet">💊</span><span><strong>Integrazione:</strong> vitamine, salute intestinale e prevenzione del declino cognitivo</span></li>
+              <li><span class="bullet">🫁</span><span><strong>Respirazione:</strong> gestione della pressione, focus, attenzione e qualità del sonno</span></li>
             </ul>
           </div>
         </div>
@@ -991,10 +1019,10 @@
             <div class="program-content-title">🏊 Sessione Pratica in Acqua</div>
             <div class="program-content-desc">Esercizi a basso impatto, accessibili a tutti. Adattati alle esigenze di ciascuno.</div>
             <ul class="program-items-list">
-              <li><span class="bullet">💪</span> <strong>Attivazione muscolare e articolare</strong> a bordo vasca</li>
-              <li><span class="bullet">🧠</span> Esercizi per migliorare le <strong>abilità motorie e cognitive</strong></li>
-              <li><span class="bullet">⚖️</span> Stimolazione della <strong>propriocettività</strong> e dell'equilibrio</li>
-              <li><span class="bullet">🎯</span> Supporto alla <strong>memoria e all'attenzione</strong></li>
+              <li><span class="bullet">💪</span><span><strong>Attivazione muscolare e articolare</strong> a bordo vasca</span></li>
+              <li><span class="bullet">🧠</span><span>Esercizi per migliorare le <strong>abilità motorie e cognitive</strong></span></li>
+              <li><span class="bullet">⚖️</span><span>Stimolazione della <strong>propriocettività</strong> e dell'equilibrio</span></li>
+              <li><span class="bullet">🎯</span><span>Supporto alla <strong>memoria e all'attenzione</strong></span></li>
             </ul>
           </div>
         </div>
@@ -1063,6 +1091,7 @@
       <h2 class="section-title">Riserva il tuo posto gratuito</h2>
       <p class="section-sub">Compila il modulo qui sotto. Ti confermeremo la prenotazione via email o telefono. Posti limitati a 16 persone.</p>
 
+      <div class="tally-outer">
       <div class="tally-wrapper">
         <iframe
           data-tally-src="https://tally.so/embed/q4BY8d?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1"
@@ -1074,6 +1103,7 @@
           marginwidth="0"
           title="Prenotazione evento Over 60 Benessere e Longevità">
         </iframe>
+      </div>
       </div>
 
       <p style="margin-top: 20px; font-size: 0.88rem; color: var(--gray);">
