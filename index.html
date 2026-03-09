@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over 60: Benessere e Longevità | 29 Marzo 2026 | Piscina Lido Azzurro Varedo</title>
+  <meta name="description" content="Evento gratuito dedicato alla terza età: nutrizione, respirazione e ginnastica dolce in acqua per vivere più a lungo e in salute. Solo 25 posti disponibili!">
+  <meta property="og:title" content="Over 60: Benessere e Longevità – 29 Marzo 2026">
+  <meta property="og:description" content="Ingresso gratuito. Solo 25 posti. Prenota subito il tuo posto.">
+  <meta property="og:type" content="website">
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1063589709210238');
+    fbq('track','PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1063589709210238&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --blue: #0288D1;
+      --blue-light: #29B6F6;
+      --blue-dark: #01579B;
+      --purple: #7B1FA2;
+      --magenta: #C2185B;
+      --orange: #F57C00;
+      --green-bright: #00C853;
+      --white: #FFFFFF;
+      --gray-light: #F5F7FA;
+      --gray: #6B7280;
+      --dark: #1A1A2E;
+      --gradient: linear-gradient(135deg, #0288D1 0%, #7B1FA2 100%);
+      --gradient-hero: linear-gradient(160deg, #01579B 0%, #0288D1 35%, #7B1FA2 70%, #C2185B 100%);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── Announcement Bar ── */
+    .topbar {
+      background: linear-gradient(90deg, var(--magenta), var(--orange));
+      color: white;
+      text-align: center;
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.2px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .topbar span {
+      animation: pulse 2s ease-in-out infinite;
+      display: inline-block;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.75} }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--gradient-hero);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 25% 75%, rgba(255,255,255,0.06) 0%, transparent 50%),
+        radial-gradient(circle at 75% 25%, rgba(255,255,255,0.08) 0%, transparent 50%);
+      animation: float 9s ease-in-out infinite;
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
+
+    .hero-eyebrow {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      padding: 7px 18px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .badge-free  { background: var(--green-bright); color: white; }
+    .badge-spots { background: rgba(255,255,255,0.15); color: white; border: 2px solid rgba(255,255,255,0.4); }
+    .badge-date  { background: rgba(255,255,255,0.18); color: white; border: 2px solid rgba(255,255,255,0.45); }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 900;
+      color: white;
+      line-height: 1.1;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.25);
+    }
+    .hero h1 em { font-style: normal; color: #FFD740; }
+
+    .hero h2 {
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+      font-weight: 400;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 540px;
+      margin: 0 auto 36px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Countdown ── */
+    .countdown {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      margin-bottom: 36px;
+      position: relative;
+      z-index: 1;
+    }
+    .cd-unit {
+      background: rgba(255,255,255,0.14);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 12px;
+      padding: 14px 18px;
+      min-width: 76px;
+      text-align: center;
+    }
+    .cd-num {
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: white;
+      line-height: 1;
+      display: block;
+    }
+    .cd-lbl {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.65);
+      margin-top: 5px;
+    }
+
+    /* ── Spots bar ── */
+    .spots-bar {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 12px;
+      padding: 14px 22px;
+      margin-bottom: 32px;
+      max-width: 380px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .spots-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 9px;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.82);
+      font-weight: 600;
+    }
+    .spots-num { color: #FFD740; font-weight: 900; }
+    .spots-track {
+      height: 7px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .spots-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00C853, #FFD740);
+      border-radius: 4px;
+      width: 0%;
+      transition: width 1.6s ease;
+    }
+
+    /* ── CTA Buttons ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #FF8F00, #F57C00);
+      color: white;
+      padding: 17px 38px;
+      border-radius: 50px;
+      font-size: 1.12rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 8px 28px rgba(245,124,0,0.4);
+      position: relative;
+      z-index: 1;
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 38px rgba(245,124,0,0.5);
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: white;
+      padding: 13px 26px;
+      border-radius: 50px;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.45);
+      transition: all 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-note {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Section Common ── */
+    section { padding: 80px 24px; }
+    .container { max-width: 900px; margin: 0 auto; }
+
+    .section-tag {
+      display: inline-block;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--gray);
+      max-width: 580px;
+    }
+
+    /* ── Benefits ── */
+    .benefits { background: var(--gray-light); }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 48px;
+    }
+    .benefit-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px 26px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+      transition: all 0.3s;
+      border-top: 4px solid transparent;
+    }
+    .benefit-card:nth-child(1) { border-top-color: #0288D1; }
+    .benefit-card:nth-child(2) { border-top-color: #7B1FA2; }
+    .benefit-card:nth-child(3) { border-top-color: #C2185B; }
+    .benefit-card:hover { transform: translateY(-6px); box-shadow: 0 14px 38px rgba(0,0,0,0.11); }
+    .benefit-icon { font-size: 2.8rem; margin-bottom: 18px; display: block; }
+    .benefit-title { font-size: 1.2rem; font-weight: 800; color: var(--dark); margin-bottom: 10px; }
+    .benefit-text { color: var(--gray); font-size: 0.93rem; line-height: 1.7; }
+    .benefit-list { list-style: none; margin-top: 14px; }
+    .benefit-list li {
+      font-size: 0.88rem;
+      color: var(--gray);
+      padding: 4px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .benefit-list li::before { content: '✓'; color: var(--green-bright); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* ── Program ── */
+    .program { background: white; }
+    .program-timeline { position: relative; margin-top: 48px; }
+    .program-timeline::before {
+      content: '';
+      position: absolute;
+      left: 58px; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--gradient);
+      border-radius: 2px;
+    }
+    .program-item { display: flex; gap: 30px; margin-bottom: 36px; position: relative; }
+    .program-time {
+      flex-shrink: 0;
+      width: 116px;
+      text-align: right;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--blue-dark);
+      line-height: 1.3;
+      padding-top: 4px;
+    }
+    .program-dot {
+      flex-shrink: 0;
+      width: 18px; height: 18px;
+      background: white;
+      border: 3px solid;
+      border-radius: 50%;
+      margin-top: 5px;
+      position: relative;
+      z-index: 1;
+    }
+    .program-item:nth-child(1) .program-dot { border-color: var(--blue); }
+    .program-item:nth-child(2) .program-dot { border-color: #9E9E9E; }
+    .program-item:nth-child(3) .program-dot { border-color: var(--purple); }
+
+    .program-content {
+      flex: 1;
+      background: var(--gray-light);
+      border-radius: 16px;
+      padding: 22px 26px;
+    }
+    .program-content-title { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+    .program-content-desc { font-size: 0.92rem; color: var(--gray); margin-bottom: 14px; }
+    .program-items-list { list-style: none; }
+    .program-items-list li {
+      font-size: 0.9rem;
+      color: var(--dark);
+      padding: 6px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .program-items-list li:last-child { border-bottom: none; }
+    .program-items-list li .bullet { flex-shrink: 0; }
+
+    /* ── Speakers ── */
+    .speakers { background: var(--gray-light); }
+    .speakers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .speaker-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+      transition: all 0.3s;
+    }
+    .speaker-card:hover { transform: translateY(-8px); box-shadow: 0 20px 48px rgba(0,0,0,0.14); }
+    .speaker-avatar {
+      width: 100%; height: 200px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .speaker-card:nth-child(1) .speaker-avatar { background: linear-gradient(135deg, #0288D1, #7B1FA2); }
+    .speaker-card:nth-child(2) .speaker-avatar { background: linear-gradient(135deg, #7B1FA2, #C2185B); }
+    .speaker-initials {
+      font-size: 3.8rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: -2px;
+    }
+    .speaker-info { padding: 26px; }
+    .speaker-role {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+    .speaker-card:nth-child(1) .speaker-role { color: var(--blue); }
+    .speaker-card:nth-child(2) .speaker-role { color: var(--purple); }
+    .speaker-name { font-size: 1.45rem; font-weight: 800; color: var(--dark); margin-bottom: 10px; font-style: italic; }
+    .speaker-bio { font-size: 0.93rem; color: var(--gray); line-height: 1.7; }
+
+    /* ── Scarcity Banner ── */
+    .scarcity {
+      background: linear-gradient(135deg, #FF6F00, #C2185B);
+      padding: 56px 24px;
+      text-align: center;
+      color: white;
+    }
+    .scarcity h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 900; margin-bottom: 14px; }
+    .scarcity p { font-size: 1.1rem; opacity: 0.9; max-width: 500px; margin: 0 auto 28px; }
+    .scarcity-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.15);
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: 50px;
+      padding: 9px 22px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+    .scarcity-pill .big { font-size: 1.4rem; font-weight: 900; }
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      color: #C2185B;
+      padding: 16px 38px;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+    }
+    .btn-white:hover { transform: translateY(-3px); box-shadow: 0 14px 38px rgba(0,0,0,0.28); }
+
+    /* ── Form Section ── */
+    .form-section {
+      background: white;
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .form-section .section-sub { margin: 0 auto 44px; }
+    .tally-wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+
+    /* ── Location ── */
+    .location { background: var(--gray-light); }
+    .location-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 48px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+    .location-map-placeholder {
+      background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 32px;
+      text-align: center;
+    }
+    .map-icon { font-size: 4rem; }
+    .map-address {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.5;
+    }
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--blue);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+      margin-top: 6px;
+    }
+    .map-link:hover { background: var(--blue-dark); }
+    .location-details { padding: 36px; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+    .loc-item { display: flex; align-items: flex-start; gap: 14px; }
+    .loc-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .loc-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; color: var(--gray); margin-bottom: 3px; }
+    .loc-value { font-size: 0.98rem; font-weight: 600; color: var(--dark); }
+    .loc-value a { color: var(--blue); text-decoration: none; }
+    .loc-value a:hover { text-decoration: underline; }
+
+    /* ── FAQ ── */
+    .faq { background: white; }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 10px; }
+    .faq-item {
+      background: var(--gray-light);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 18px 22px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      user-select: none;
+    }
+    .faq-q:hover { background: rgba(0,0,0,0.03); }
+    .faq-chevron { flex-shrink: 0; transition: transform 0.3s; font-size: 0.9rem; }
+    .faq-a {
+      padding: 0 22px;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      color: var(--gray);
+      font-size: 0.93rem;
+      line-height: 1.75;
+    }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 22px 18px; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+    /* ── Final CTA ── */
+    .final-cta {
+      background: var(--gradient-hero);
+      padding: 100px 24px;
+      text-align: center;
+      color: white;
+    }
+    .final-cta h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; margin-bottom: 18px; }
+    .final-cta p { font-size: 1.12rem; opacity: 0.85; max-width: 480px; margin: 0 auto 40px; }
+    .final-options { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .btn-cta-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      color: var(--purple);
+      padding: 17px 42px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+    }
+    .btn-cta-white:hover { transform: translateY(-3px); box-shadow: 0 14px 38px rgba(0,0,0,0.3); }
+    .or-divider { color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+    .btn-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.14);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.38);
+      transition: all 0.3s;
+    }
+    .btn-call:hover { background: rgba(255,255,255,0.24); border-color: white; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.65);
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+    footer strong { color: white; }
+    footer a { color: var(--blue-light); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-social { display: flex; gap: 16px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      transition: all 0.2s;
+      color: rgba(255,255,255,0.78);
+      font-size: 0.82rem;
+      text-decoration: none;
+    }
+    .footer-social a:hover { background: rgba(255,255,255,0.15); text-decoration: none; }
+
+    /* ── Sticky Mobile CTA ── */
+    .sticky-cta {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: white;
+      padding: 11px 18px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.14);
+      display: none;
+      z-index: 99;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    @media (max-width: 640px) { .sticky-cta { display: flex; } }
+    .sticky-text { font-size: 0.83rem; font-weight: 700; color: var(--dark); }
+    .sticky-text span { display: block; font-size: 0.73rem; color: var(--green-bright); font-weight: 600; }
+    .btn-sticky {
+      flex-shrink: 0;
+      background: linear-gradient(135deg, #FF8F00, #F57C00);
+      color: white;
+      padding: 11px 18px;
+      border-radius: 50px;
+      font-size: 0.87rem;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      section { padding: 60px 20px; }
+      .hero { padding: 80px 20px 100px; min-height: auto; }
+      .countdown { gap: 9px; }
+      .cd-unit { min-width: 62px; padding: 12px 10px; }
+      .cd-num { font-size: 1.75rem; }
+      .program-timeline::before { left: 48px; }
+      .program-time { width: 96px; font-size: 0.76rem; }
+      .location-card { grid-template-columns: 1fr; }
+      .final-cta { padding: 80px 20px 100px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <span>⚠️ Soli 25 posti disponibili — Ingresso 100% gratuito · Prenotazione obbligatoria</span>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-eyebrow">Piscina Lido Azzurro · Varedo (MB)</div>
+
+    <div class="hero-badges">
+      <span class="badge badge-free">✓ Ingresso Gratuito</span>
+      <span class="badge badge-spots">⚡ Solo 25 Posti</span>
+      <span class="badge badge-date">📅 29 Marzo 2026</span>
+    </div>
+
+    <h1>Over 60:<br><em>Benessere e Longevità</em></h1>
+    <h2>Salute, Energia e Qualità della Vita nella Terza Età</h2>
+
+    <p class="hero-desc">
+      Un incontro scientifico e pratico per scoprire come vivere più a lungo, in piena salute e autonomia.
+      <strong style="color:white;">Nutrizione · Respirazione · Ginnastica dolce in acqua.</strong>
+    </p>
+
+    <!-- Countdown -->
+    <div class="countdown" id="countdown">
+      <div class="cd-unit"><span class="cd-num" id="days">20</span><span class="cd-lbl">Giorni</span></div>
+      <div class="cd-unit"><span class="cd-num" id="hours">00</span><span class="cd-lbl">Ore</span></div>
+      <div class="cd-unit"><span class="cd-num" id="minutes">00</span><span class="cd-lbl">Minuti</span></div>
+      <div class="cd-unit"><span class="cd-num" id="seconds">00</span><span class="cd-lbl">Secondi</span></div>
+    </div>
+
+    <!-- Spots progress -->
+    <div class="spots-bar">
+      <div class="spots-row">
+        <span>Disponibilità posti</span>
+        <span class="spots-num">Solo 25 rimasti!</span>
+      </div>
+      <div class="spots-track"><div class="spots-fill" id="spotsFill"></div></div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="#prenota" class="btn-primary">✉️ Prenota il tuo posto gratuito</a>
+      <a href="tel:0362580874" class="btn-secondary">📞 0362 580874</a>
+    </div>
+    <p class="hero-note">Domenica 29 Marzo 2026 · Ore 9:30 · Prenotazione obbligatoria</p>
+  </section>
+
+  <!-- ═══ BENEFITS ═══ -->
+  <section class="benefits">
+    <div class="container">
+      <span class="section-tag">Cosa imparerai</span>
+      <h2 class="section-title">Tre pilastri per una vita lunga e attiva</h2>
+      <p class="section-sub">Esperti qualificati ti daranno strumenti concreti e scientificamente validati, subito applicabili nella vita quotidiana.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <span class="benefit-icon">🥗</span>
+          <div class="benefit-title">Nutrizione & Integrazione</div>
+          <p class="benefit-text">Scopri come alimentazione e integratori giusti proteggono muscoli, ossa e cervello con l'avanzare dell'età.</p>
+          <ul class="benefit-list">
+            <li>Prevenire la perdita muscolare</li>
+            <li>Contrastare l'osteoporosi</li>
+            <li>Vitamine e salute intestinale</li>
+            <li>Prevenire il declino cognitivo</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card">
+          <span class="benefit-icon">🫁</span>
+          <div class="benefit-title">Tecniche di Respirazione</div>
+          <p class="benefit-text">La respirazione consapevole è uno strumento potente e spesso sottovalutato per la salute e il benessere quotidiano.</p>
+          <ul class="benefit-list">
+            <li>Gestire la pressione sanguigna</li>
+            <li>Migliorare focus e attenzione</li>
+            <li>Favorire un sonno ristoratore</li>
+            <li>Ridurre lo stress naturalmente</li>
+          </ul>
+        </div>
+
+        <div class="benefit-card">
+          <span class="benefit-icon">🏊</span>
+          <div class="benefit-title">Ginnastica Dolce in Acqua</div>
+          <p class="benefit-text">Una sessione pratica in acqua, sicura e accessibile, pensata per le esigenze specifiche dell'over 60.</p>
+          <ul class="benefit-list">
+            <li>Equilibrio e prevenzione cadute</li>
+            <li>Tono muscolare e articolare</li>
+            <li>Memoria e funzioni cognitive</li>
+            <li>Vita autonoma e indipendente</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROGRAM ═══ -->
+  <section class="program">
+    <div class="container">
+      <span class="section-tag">Programma</span>
+      <h2 class="section-title">La giornata in dettaglio</h2>
+      <p class="section-sub">Domenica 29 Marzo 2026 · Ore 9:30 – 13:00 · Piscina Lido Azzurro, Varedo</p>
+
+      <div class="program-timeline">
+        <div class="program-item">
+          <div class="program-time">9:30<br>11:00</div>
+          <div class="program-dot"></div>
+          <div class="program-content">
+            <div class="program-content-title">📚 Sessione Teorica</div>
+            <div class="program-content-desc">Strategie pratiche e scientificamente validate, spiegate da esperti del settore.</div>
+            <ul class="program-items-list">
+              <li><span class="bullet">🥗</span> <strong>Nutrizione:</strong> prevenzione della perdita muscolare e dell'osteoporosi</li>
+              <li><span class="bullet">💊</span> <strong>Integrazione:</strong> vitamine, salute intestinale e prevenzione del declino cognitivo</li>
+              <li><span class="bullet">🫁</span> <strong>Respirazione:</strong> gestione della pressione, focus, attenzione e qualità del sonno</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="program-item">
+          <div class="program-time">11:00<br>11:30</div>
+          <div class="program-dot"></div>
+          <div class="program-content">
+            <div class="program-content-title">☕ Pausa</div>
+            <div class="program-content-desc">Momento di relax e confronto con gli altri partecipanti e gli esperti.</div>
+          </div>
+        </div>
+
+        <div class="program-item">
+          <div class="program-time">11:30<br>13:00</div>
+          <div class="program-dot"></div>
+          <div class="program-content">
+            <div class="program-content-title">🏊 Sessione Pratica in Acqua</div>
+            <div class="program-content-desc">Esercizi a basso impatto, accessibili a tutti. Adattati alle esigenze di ciascuno.</div>
+            <ul class="program-items-list">
+              <li><span class="bullet">💪</span> <strong>Attivazione muscolare e articolare</strong> a bordo vasca</li>
+              <li><span class="bullet">🧠</span> Esercizi per migliorare le <strong>abilità motorie e cognitive</strong></li>
+              <li><span class="bullet">⚖️</span> Stimolazione della <strong>propriocettività</strong> e dell'equilibrio</li>
+              <li><span class="bullet">🎯</span> Supporto alla <strong>memoria e all'attenzione</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SPEAKERS ═══ -->
+  <section class="speakers">
+    <div class="container">
+      <span class="section-tag">I Relatori</span>
+      <h2 class="section-title">Esperti della longevità al tuo servizio</h2>
+      <p class="section-sub">Due professionisti con esperienza comprovata nella salute e nel benessere della terza età.</p>
+
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <div class="speaker-avatar"><span class="speaker-initials">FZ</span></div>
+          <div class="speaker-info">
+            <div class="speaker-role">Farmacista del Respiro</div>
+            <div class="speaker-name">Francesca Zamboni</div>
+            <p class="speaker-bio">Esperta in integrazione, nutrizione e tecniche di respirazione applicate alla longevità. Ti guiderà attraverso strategie pratiche per proteggere salute intestinale, funzione cognitiva e qualità del sonno.</p>
+          </div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-avatar"><span class="speaker-initials">MP</span></div>
+          <div class="speaker-info">
+            <div class="speaker-role">Longevity Aqua Trainer</div>
+            <div class="speaker-name">Monica Panceri</div>
+            <p class="speaker-bio">Specializzata in ginnastica dolce e posturale in acqua per l'over 60. I suoi esercizi migliorano l'equilibrio, la memoria e il tono muscolare, contribuendo concretamente alla prevenzione delle cadute.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SCARCITY ═══ -->
+  <div class="scarcity">
+    <h2>⚡ I posti si stanno esaurendo</h2>
+    <p>Questo evento è completamente gratuito ma a numero chiuso. Con soli 25 posti disponibili, non rimandare.</p>
+    <div class="scarcity-pill">
+      <span>Posti disponibili:</span>
+      <span class="big">25</span>
+      <span>su 25 totali</span>
+    </div>
+    <br>
+    <a href="#prenota" class="btn-white">✉️ Prenota ora — è gratis</a>
+  </div>
+
+  <!-- ═══ FORM (TALLY) ═══ -->
+  <section class="form-section" id="prenota">
+    <div class="container">
+      <span class="section-tag">Prenota il tuo posto</span>
+      <h2 class="section-title">Riserva il tuo posto gratuito</h2>
+      <p class="section-sub">Compila il modulo qui sotto. Ti confermeremo la prenotazione via email o telefono. Posti limitati a 25 persone.</p>
+
+      <div class="tally-wrapper">
+        <iframe
+          data-tally-src="https://tally.so/embed/q4BY8d?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1"
+          loading="lazy"
+          width="100%"
+          height="300"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Prenotazione evento Over 60 Benessere e Longevità">
+        </iframe>
+      </div>
+
+      <p style="margin-top: 20px; font-size: 0.88rem; color: var(--gray);">
+        In alternativa: <a href="tel:0362580874" style="color:var(--blue);">0362 580874</a> oppure <a href="mailto:info@npvaredo.it" style="color:var(--blue);">info@npvaredo.it</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══ LOCATION ═══ -->
+  <section class="location">
+    <div class="container">
+      <span class="section-tag">Dove e Come</span>
+      <h2 class="section-title">Ci troviamo alla Piscina Lido Azzurro</h2>
+
+      <div class="location-card">
+        <div class="location-map-placeholder">
+          <span class="map-icon">📍</span>
+          <div class="map-address">
+            <strong>Piscina LIDO AZZURRO</strong><br>
+            Viale Rebuzzini, 20<br>
+            20814 Varedo (MB)
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Viale+Rebuzzini+20+Varedo+MB" target="_blank" rel="noopener" class="map-link">
+            🗺️ Apri su Google Maps
+          </a>
+        </div>
+
+        <div class="location-details">
+          <div class="loc-item">
+            <span class="loc-icon">📅</span>
+            <div>
+              <div class="loc-label">Data e Orario</div>
+              <div class="loc-value">Domenica 29 Marzo 2026<br>Ore 9:30 – 13:00</div>
+            </div>
+          </div>
+          <div class="loc-item">
+            <span class="loc-icon">📍</span>
+            <div>
+              <div class="loc-label">Indirizzo</div>
+              <div class="loc-value">Viale Rebuzzini, 20<br>20814 Varedo (MB)</div>
+            </div>
+          </div>
+          <div class="loc-item">
+            <span class="loc-icon">📞</span>
+            <div>
+              <div class="loc-label">Telefono</div>
+              <div class="loc-value"><a href="tel:0362580874">0362 580874</a></div>
+            </div>
+          </div>
+          <div class="loc-item">
+            <span class="loc-icon">✉️</span>
+            <div>
+              <div class="loc-label">Email</div>
+              <div class="loc-value"><a href="mailto:info@npvaredo.it">info@npvaredo.it</a></div>
+            </div>
+          </div>
+          <div class="loc-item">
+            <span class="loc-icon">🌐</span>
+            <div>
+              <div class="loc-label">Sito Web</div>
+              <div class="loc-value"><a href="http://www.npvaredo.it" target="_blank" rel="noopener">www.npvaredo.it</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-tag">Hai domande?</span>
+      <h2 class="section-title">Domande frequenti</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            È davvero gratuito?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-a">
+            Sì, l'ingresso è completamente gratuito. Non ci sono costi nascosti né prodotti da acquistare. L'unico requisito è la prenotazione obbligatoria, in quanto i posti sono limitati a 25 persone.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Devo saper nuotare per la sessione in acqua?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-a">
+            No, non è necessario saper nuotare. La sessione si svolge in zone accessibili della piscina, con esercizi a ridotto sforzo fisico pensati per essere sicuri e accessibili a tutti, indipendentemente dalla forma fisica attuale.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Come posso prenotare il mio posto?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-a">
+            Puoi compilare il modulo su questa pagina, scrivere a info@npvaredo.it oppure telefonare al 0362 580874. Ti consigliamo di prenotare subito: i posti disponibili sono solo 25 e si esauriscono rapidamente.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Cosa devo portare con me?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-a">
+            Per la sessione teorica: taccuino e penna se vuoi prendere appunti. Per la sessione pratica in acqua: costume da bagno, cuffia e asciugamano. Se assumi farmaci regolarmente, portali con te nel caso in cui la farmacista possa offrirti indicazioni personalizzate.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Posso partecipare se ho problemi di mobilità?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-a">
+            Assolutamente sì. L'evento è pensato proprio per persone over 60 con diverse esigenze fisiche. Gli esercizi in acqua sono a ridotto impatto articolare e vengono adattati a ciascun partecipante. Ti consigliamo di segnalare eventuali condizioni particolari al momento della prenotazione.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FINAL CTA ═══ -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Non perdere questa opportunità</h2>
+      <p>Solo 25 posti disponibili. Prenota gratis il tuo posto per domenica 29 marzo.</p>
+      <div class="final-options">
+        <a href="#prenota" class="btn-cta-white">✉️ Prenota il tuo posto ora</a>
+        <span class="or-divider">— oppure —</span>
+        <a href="tel:0362580874" class="btn-call">📞 Chiama: 0362 580874</a>
+        <p style="margin-top: 6px; opacity: 0.65; font-size: 0.88rem;">info@npvaredo.it · www.npvaredo.it</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="container">
+      <p><strong>Piscina LIDO AZZURRO</strong> · Centro Natatorio NP Varedo</p>
+      <p style="margin-top: 8px;">
+        Viale Rebuzzini, 20 · 20814 Varedo (MB) ·
+        <a href="tel:0362580874">0362 580874</a> ·
+        <a href="mailto:info@npvaredo.it">info@npvaredo.it</a>
+      </p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/PiscinaLIDOAZZURROVaredo" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Piscina LIDO AZZURRO Varedo
+        </a>
+        <a href="https://www.instagram.com/piscina_lido_azzurro" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          piscina_lido_azzurro
+        </a>
+      </div>
+      <p style="margin-top: 22px; font-size: 0.76rem; opacity: 0.42;">© 2026 NP Varedo · Piscina Lido Azzurro · Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <div class="sticky-text">
+      Prenota ora
+      <span>✓ Gratuito · Solo 25 posti</span>
+    </div>
+    <a href="#prenota" class="btn-sticky">✉️ Prenota</a>
+  </div>
+
+  <!-- Tally embed script -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
+
+  <script>
+    // Countdown
+    function updateCountdown() {
+      const target = new Date('2026-03-29T09:30:00');
+      const now = new Date();
+      const diff = target - now;
+      if (diff <= 0) {
+        document.getElementById('countdown').innerHTML =
+          '<div style="color:white;font-size:1.3rem;font-weight:700;">🎉 L\'evento è oggi!</div>';
+        return;
+      }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('days').textContent    = String(d).padStart(2,'0');
+      document.getElementById('hours').textContent   = String(h).padStart(2,'0');
+      document.getElementById('minutes').textContent = String(m).padStart(2,'0');
+      document.getElementById('seconds').textContent = String(s).padStart(2,'0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Spots bar animation
+    setTimeout(() => { document.getElementById('spotsFill').style.width = '68%'; }, 600);
+
+    // FAQ accordion
+    function toggleFaq(el) {
+      const item = el.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // Meta Pixel: track Lead on Tally form submit
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.type === 'tally-form-submitted') {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead');
+        }
+      }
+    });
+
+    // Sticky CTA: hide when hero CTAs are visible
+    const heroCtas = document.querySelector('.hero-ctas');
+    const stickyCta = document.getElementById('stickyCta');
+    if (heroCtas && stickyCta && window.IntersectionObserver) {
+      new IntersectionObserver(entries => {
+        stickyCta.style.display = entries[0].isIntersecting ? 'none' : 'flex';
+      }, { threshold: 0.4 }).observe(heroCtas);
+    }
+  </script>
+
+</body>
+</html>
