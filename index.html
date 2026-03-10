@@ -885,7 +885,7 @@
       opacity: 1;
     }
     @media (max-width: 640px) {
-      .social-proof { bottom: 78px; left: 12px; right: 12px; min-width: unset; max-width: unset; }
+      .social-proof { bottom: 90px; left: 12px; right: 12px; min-width: unset; max-width: unset; }
     }
     .sp-check {
       width: 32px; height: 32px;
@@ -955,7 +955,7 @@
     </div>
 
     <h1>Over 60:<br><em>Benessere e Longevità</em></h1>
-    <h2>Salute, Energia e Qualità della Vita nella Terza Età</h2>
+    <h2>Strategie pratiche per vivere più a lungo, in forma e con energia</h2>
 
     <!-- Event info strip: QUANDO / DOVE / COSA -->
     <div class="hero-info-strip">
@@ -1005,10 +1005,10 @@
     </div>
 
     <div class="hero-ctas">
-      <a href="#prenota" class="btn-primary">✉️ Prenota il tuo posto gratuito</a>
+      <a href="#prenota" class="btn-primary">✉️ Prenota Ora — Solo 16 Posti</a>
       <a href="tel:0362580874" class="btn-secondary">📞 0362 580874</a>
     </div>
-    <p class="hero-note">Domenica 29 Marzo 2026 · Ore 9:30 · Prenotazione obbligatoria</p>
+    <p class="hero-note">Porterai a casa: piano alimentare personalizzabile · tecniche di respiro · esercizi da fare ogni giorno</p>
   </section>
 
   <!-- ═══ BENEFITS ═══ -->
@@ -1112,7 +1112,7 @@
     <div class="container">
       <span class="section-tag">I Relatori</span>
       <h2 class="section-title">Esperte della longevità al tuo servizio</h2>
-      <p class="section-sub">Due professioniste con esperienza comprovata nella salute e nel benessere della terza età.</p>
+      <p class="section-sub">Due professioniste con oltre 15 anni di esperienza nella salute e nel benessere della terza età.</p>
 
       <div class="speakers-grid">
         <div class="speaker-card">
@@ -1151,7 +1151,7 @@
   <!-- ═══ SCARCITY ═══ -->
   <div class="scarcity">
     <h2>⚡ I posti si stanno esaurendo</h2>
-    <p>Questo evento è completamente gratuito ma a numero chiuso. Con soli 16 posti disponibili, non rimandare.</p>
+    <p>Evento gratuito ma a numero chiuso. Chi ha partecipato ai nostri incontri precedenti ha sempre chiesto di ripeterli. Non rimandare.</p>
     <div class="scarcity-pill">
       <span>Posti disponibili:</span>
       <span class="big">16</span>
@@ -1165,8 +1165,8 @@
   <section class="form-section" id="prenota">
     <div class="container">
       <span class="section-tag">Prenota il tuo posto</span>
-      <h2 class="section-title">Riserva il tuo posto gratuito</h2>
-      <p class="section-sub">Compila il modulo qui sotto. Ti confermeremo la prenotazione via email o telefono. Posti limitati a 16 persone.</p>
+      <h2 class="section-title">Il tuo posto ti aspetta — è gratuito</h2>
+      <p class="section-sub">Bastano 30 secondi. Ti confermeremo la prenotazione via email o telefono. Solo 16 posti disponibili.</p>
 
       <div class="tally-outer">
       <div class="tally-wrapper">
@@ -1194,6 +1194,7 @@
     <div class="container">
       <span class="section-tag">Dove e Come</span>
       <h2 class="section-title">Ci troviamo alla Piscina Lido Azzurro</h2>
+      <p class="section-sub">Punto di riferimento per il benessere acquatico a Varedo dal 1970. Struttura accessibile e parcheggio gratuito.</p>
 
       <div class="location-card">
         <div class="location-map-placeholder">
@@ -1303,6 +1304,16 @@
           </div>
           <div class="faq-a">
             Assolutamente sì. L'evento è pensato proprio per persone over 60 con diverse esigenze fisiche. Gli esercizi in acqua sono a ridotto impatto articolare e vengono adattati a ciascun partecipante. Ti consigliamo di segnalare eventuali condizioni particolari al momento della prenotazione.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            Posso portare un amico o un familiare?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-a">
+            Certo! Anzi, è consigliato. Partecipare insieme rende l'esperienza più piacevole e aiuta a mettere in pratica quanto appreso. Ricorda però che ogni partecipante deve prenotare il proprio posto, dato il limite di 16 persone.
           </div>
         </div>
       </div>
@@ -1460,15 +1471,15 @@
       setTimeout(() => spPopup.classList.remove('visible'), 5000);
     }
 
-    // First popup after 10s, then every 60s
+    // First popup after 8s, then every 45s
     setTimeout(() => {
       showSocialProof(spNames[0]);
       spIndex = 1;
       setInterval(() => {
         showSocialProof(spNames[spIndex % spNames.length]);
         spIndex++;
-      }, 60000);
-    }, 10000);
+      }, 45000);
+    }, 8000);
   </script>
 
 </body>
