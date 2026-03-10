@@ -280,6 +280,61 @@
       z-index: 1;
     }
 
+    /* ── Hero info strip ── */
+    .hero-info-strip {
+      display: flex;
+      align-items: stretch;
+      background: rgba(255,255,255,0.13);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.26);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 32px;
+      max-width: 560px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-info-item {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 18px 16px;
+      text-align: left;
+    }
+    .hero-info-sep {
+      width: 1px;
+      background: rgba(255,255,255,0.2);
+      margin: 14px 0;
+      flex-shrink: 0;
+    }
+    .hero-info-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .hero-info-label {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.55);
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .hero-info-value {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: white;
+      line-height: 1.25;
+    }
+    .hero-info-sub {
+      font-size: 0.76rem;
+      color: rgba(255,255,255,0.68);
+      margin-top: 2px;
+    }
+    @media (max-width: 540px) {
+      .hero-info-strip { flex-direction: column; max-width: 340px; }
+      .hero-info-sep { width: auto; height: 1px; margin: 0 16px; }
+      .hero-info-item { padding: 14px 18px; }
+    }
+
     /* ── Section Common ── */
     section { padding: 80px 24px; }
     .container { max-width: 900px; margin: 0 auto; }
@@ -752,11 +807,11 @@
       font-size: 0.8rem;
     }
     .footer-legal a {
-      color: rgba(255,255,255,0.4);
+      color: rgba(255,255,255,0.65);
       text-decoration: none;
       transition: color 0.2s;
     }
-    .footer-legal a:hover { color: rgba(255,255,255,0.75); }
+    .footer-legal a:hover { color: white; }
     .footer-social {
       display: flex;
       gap: 12px;
@@ -894,21 +949,43 @@
       class="hero-logo"
       onerror="this.style.display='none'">
 
-    <div class="hero-eyebrow">Piscina Lido Azzurro · Varedo (MB)</div>
-
     <div class="hero-badges">
       <span class="badge badge-free">✓ Ingresso Gratuito</span>
       <span class="badge badge-spots">⚡ Solo 16 Posti</span>
-      <span class="badge badge-date">📅 29 Marzo 2026</span>
     </div>
 
     <h1>Over 60:<br><em>Benessere e Longevità</em></h1>
     <h2>Salute, Energia e Qualità della Vita nella Terza Età</h2>
 
-    <p class="hero-desc">
-      Un incontro scientifico e pratico per scoprire come vivere più a lungo, in piena salute e autonomia.
-      <strong style="color:white;">Nutrizione · Respirazione · Ginnastica dolce in acqua.</strong>
-    </p>
+    <!-- Event info strip: QUANDO / DOVE / COSA -->
+    <div class="hero-info-strip">
+      <div class="hero-info-item">
+        <span class="hero-info-icon">📅</span>
+        <div>
+          <div class="hero-info-label">Quando</div>
+          <div class="hero-info-value">Dom. 29 Marzo 2026</div>
+          <div class="hero-info-sub">Ore 9:30 – 13:00</div>
+        </div>
+      </div>
+      <div class="hero-info-sep"></div>
+      <div class="hero-info-item">
+        <span class="hero-info-icon">📍</span>
+        <div>
+          <div class="hero-info-label">Dove</div>
+          <div class="hero-info-value">Piscina Lido Azzurro</div>
+          <div class="hero-info-sub">Varedo (MB)</div>
+        </div>
+      </div>
+      <div class="hero-info-sep"></div>
+      <div class="hero-info-item">
+        <span class="hero-info-icon">🎓</span>
+        <div>
+          <div class="hero-info-label">Cosa</div>
+          <div class="hero-info-value">Nutrizione · Respiro</div>
+          <div class="hero-info-sub">Ginnastica in acqua</div>
+        </div>
+      </div>
+    </div>
 
     <!-- Countdown -->
     <div class="countdown" id="countdown">
@@ -1228,20 +1305,6 @@
             Assolutamente sì. L'evento è pensato proprio per persone over 60 con diverse esigenze fisiche. Gli esercizi in acqua sono a ridotto impatto articolare e vengono adattati a ciascun partecipante. Ti consigliamo di segnalare eventuali condizioni particolari al momento della prenotazione.
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ FINAL CTA ═══ -->
-  <section class="final-cta">
-    <div class="container">
-      <h2>Non perdere questa opportunità</h2>
-      <p>Solo 16 posti disponibili. Prenota gratis il tuo posto per domenica 29 marzo.</p>
-      <div class="final-options">
-        <a href="#prenota" class="btn-cta-white">✉️ Prenota il tuo posto ora</a>
-        <span class="or-divider">— oppure —</span>
-        <a href="tel:0362580874" class="btn-call">📞 Chiama: 0362 580874</a>
-        <p style="margin-top: 6px; opacity: 0.65; font-size: 0.88rem;">info@npvaredo.it · www.npvaredo.it</p>
       </div>
     </div>
   </section>
